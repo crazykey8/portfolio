@@ -1,0 +1,43 @@
+{
+  "common": [
+    "//clientsapi01.pb06e2-resources.com",
+    "//clientsapi02.pb06e2-resources.com",
+    "//clientsapi03.pb06e2-resources.com"
+  ],
+  "commonOther": "//commonapi.fastviewdata.com",
+  "line": [
+    "//line01.pb06e2-resources.com",
+    "//line02.pb06e2-resources.com",
+    "//line03.pb06e2-resources.com",
+    "//line04.pb06e2-resources.com",
+    "//line05.pb06e2-resources.com",
+    "//line06.pb06e2-resources.com"
+  ],
+  "line.mobile": [
+    "//line05.pb06e2-resources.com",
+    "//line05.pb06e2-resources.com"
+  ],
+  "line.desktop-ma-lja": [
+    "//line05.pb06e2-resources.com",
+    "//line05.pb06e2-resources.com"
+  ],
+  "static": "//static.pb06e2-resources.com",
+  "origin": "//static.pb06e2-resources.com",
+  "static": "//origin.pb06e2-resources.com",
+  "origin": "//origin.pb06e2-resources.com",
+  "defaultCurrency": "RUB",
+  "enableClickStream": true,
+  "useNewSettings": true,
+  "useSport": true,
+  "useBets": false,
+  "useColorSettings": true,
+  "useNewRequests": true,
+  "enableClientSupportInLoyaltyLandings": true,
+  "ecupis": true,
+  "useCallCenter": true,
+  "defaultScopeMarket": 2300,
+  "hasAppsContent": true,
+  "totoBlocked": true,
+  "eventViewStatisticEnabled": true,
+  "useNewBetsHistory": true
+}

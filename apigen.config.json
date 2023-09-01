@@ -1,0 +1,12 @@
+{
+  "snapshot": false,
+  "supportsES6": true,
+  "typescriptThreePlus": true,
+  "modelPropertyNaming": "original",
+  "withInterfaces": false,
+  "useSingleRequestParameter": true,
+  "withSeparateModelsAndApi": true,
+  "apiPackage": "api",
+  "modelPackage": "models",
+  "stringEnums": true
+}

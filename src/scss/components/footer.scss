@@ -1,0 +1,159 @@
+.footer {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 77rem;
+  padding: 0 60rem 7rem 40rem;
+
+  background-color: #000000;
+}
+
+.payments {
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: $sm) {
+    & > :not(:last-child) {
+      margin-right: 30rem;
+    }
+  }
+
+  &__visa {
+    width: 47rem;
+  }
+  &__mc {
+    width: 42rem;
+  }
+  &__peace {
+    width: 57rem;
+  }
+  &__qiwi {
+    width: 60rem;
+  }
+  &__pay {
+    width: 52rem;
+  }
+}
+
+.apps {
+  display: flex;
+  @media screen and (min-width: $sm) {
+    & > :not(:last-child) {
+      margin-right: 30rem;
+    }
+  }
+}
+
+.app {
+  width: 140rem;
+
+  transition: $ease;
+
+  img {
+    display: block;
+
+    width: 100%;
+  }
+
+  @media screen and (min-width: $sm) {
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+  }
+}
+
+.soc {
+  display: flex;
+  align-items: center;
+  @media screen and (min-width: $sm) {
+    & > :not(:last-child) {
+      margin-right: 30rem;
+    }
+  }
+}
+
+.soc__icon {
+  width: 30rem;
+
+  transition: $ease;
+  img {
+    display: block;
+
+    width: 100%;
+  }
+
+  @media screen and (min-width: $sm) {
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+  }
+}
+
+@media screen and (max-width: $sm) {
+  .footer {
+    position: relative;
+
+    flex-flow: column;
+
+    height: auto;
+    padding: 15rem 12rem;
+  }
+
+  .payments {
+    justify-content: space-between;
+
+    width: 100%;
+    margin-bottom: 20rem;
+
+    &__visa {
+      width: 30rem;
+    }
+    &__mc {
+      width: 30rem;
+    }
+    &__peace {
+      width: 38rem;
+    }
+    &__qiwi {
+      width: 40rem;
+    }
+    &__pay {
+      width: 40rem;
+    }
+  }
+
+  .apps {
+    flex-flow: wrap;
+    justify-content: space-between;
+
+    width: 100%;
+    margin-bottom: 10rem;
+  }
+
+  .app {
+    margin-bottom: 10rem;
+  }
+
+  .soc {
+    width: 100%;
+  }
+  .soc__icon {
+    width: 20rem;
+    &:first-child {
+      margin-right: auto;
+    }
+    &:not(:first-child) {
+      margin-left: 20rem;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.header {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+  display: flex;
+
+  width: 100%;
+}
+
+.header__logo {
+  margin: 40rem 0 0 40rem;
+}
+
+.logo {
+  display: block;
+
+  width: 200rem;
+
+  img {
+    background-color: white;
+    border: 5rem solid black;
+    width: 100%;
+  }
+}
+
+.header__buttons {
+  display: none;
+}
+
+.download-ios,
+.download-android {
+  img {
+    width: 38rem;
+  }
+}
+
+@media screen and (max-width: $sm) {
+  .header {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    margin: 20rem 0 0 20rem;
+  }
+
+  .logo {
+    width: 105rem;
+  }
+
+  .header__buttons {
+    display: flex;
+
+    margin: 20rem 20rem 0 0;
+    & > :not(:last-child) {
+      margin-right: 10rem;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+// configs
+@import './configs/config';
+
+// universal components
+@import './components/buttons';
+@import './components/universal';
+
+// sections
+@import './components/header';
+@import './components/promo';
+@import './components/footer';
+
+// desktop promo/billboard
+@import './components/billboard';
+@import './components/aside';
+
+// popups
+@import './components/popup';
+@import './components/popup-register';

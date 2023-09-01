@@ -1,0 +1,225 @@
+.aside {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  align-items: stretch;
+  flex-flow: column;
+  justify-content: space-between;
+
+  padding: 40rem 40rem 110rem;
+
+  background-color: rgba(#000000, 0.7);
+}
+
+.aside__head {
+  display: flex;
+  justify-content: center;
+
+  & > :not(:last-child) {
+    margin-right: 36rem;
+  }
+}
+
+.aside__buttons--mobile {
+  .button {
+    width: 255rem;
+  }
+}
+
+.aside__body {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+
+  height: 100%;
+}
+
+.aside__body--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  p {
+    font-size: 18rem;
+    font-style: normal;
+    font-weight: 500;
+  }
+  li {
+    margin-bottom: 10rem;
+    font-size: 17rem;
+    font-style: normal;
+    font-weight: 400;
+  }
+}
+
+.aside__stages {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: 95rem;
+  margin: 0 auto;
+  img {
+    height: 100%;
+  }
+}
+
+.aside__freebet {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: 205rem;
+  margin: 0 auto;
+  img {
+    height: 100%;
+  }
+}
+
+.aside__buttons {
+  display: flex;
+  flex-flow: column;
+
+  margin: 0 auto;
+
+  .button {
+    margin: 0 auto;
+    &:first-child {
+      margin-bottom: 20rem;
+    }
+  }
+}
+
+@media screen and (min-width: $sm) {
+  .aside__mobile-content {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $sm) {
+  .aside__body--text {
+    display: none;
+  }
+
+  .aside__buttons {
+    display: none;
+  }
+
+  .aside__mobile--name {
+    position: relative;
+    img {
+      &:nth-child(2) {
+        position: absolute;
+        bottom: 30rem;
+      }
+    }
+  }
+
+  .aside__body--text--mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    p {
+      font-size: 18rem;
+      font-style: normal;
+      font-weight: 500;
+    }
+    li {
+      margin-bottom: 10rem;
+      font-size: 17rem;
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+  .aside {
+    padding: 0;
+
+    background: none;
+  }
+
+  .aside__head {
+    display: none;
+  }
+
+  .aside__stages,
+  .aside__freebet {
+    width: 100%;
+    margin: 50rem auto;
+  }
+
+  .aside__freebet {
+    height: auto;
+    margin-bottom: 15rem;
+  }
+
+  .aside__buttons {
+    & > *:not(:first-child) {
+      display: none;
+    }
+  }
+
+  .aside__stages {
+    order: 1;
+
+    height: 47rem;
+    margin-top: 30rem;
+    margin-bottom: 20rem;
+  }
+
+  .aside__mobile-content {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+
+    padding-top: 15rem;
+
+    text-align: center;
+    span {
+      text-align: center;
+
+      font-size: 12rem;
+      a {
+        display: inline;
+
+        padding: 0;
+
+        text-decoration: underline;
+      }
+    }
+
+    .best-app {
+      margin-top: -20rem;
+
+      font-size: 8rem;
+    }
+  }
+
+  .aside__body--text--mobile {
+    padding-top: 215rem;
+    p {
+      font-size: 10rem;
+      font-style: normal;
+      font-weight: 500;
+      &:first-child {
+        margin-bottom: 20rem;
+      }
+    }
+
+    li {
+      margin-bottom: 10rem;
+      font-size: 6rem;
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+
+  .aside__mobile-images {
+    width: 100%;
+    height: 256rem;
+    img {
+      width: 100%;
+    }
+  }
+}
